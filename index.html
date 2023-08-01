@@ -79,7 +79,7 @@
         //числа, проверки на NaN, Infinity делать не нужно.
 
         let number1 = 8;
-        let number2 = 54;
+        let number2 = 8;
 
         const summationNum = (number1, number2) => number1 + number2;
         const multiplicationNum = (number1, number2) => number1 * number2;
@@ -87,6 +87,8 @@
         function differenceNum() {
             if (number1 < number2) {
                 differenceNum = number2 - number1;
+            } else if (number1 === number2) {
+                differenceNum = 0;
             }
             return differenceNum;
         }
